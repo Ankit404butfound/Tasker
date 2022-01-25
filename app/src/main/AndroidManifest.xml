@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.todo">
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
     <application
         android:allowBackup="true"
@@ -9,6 +10,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ToDo">
+        <activity
+            android:name=".View_done_work"
+            android:label="@string/title_activity_view_done_work"
+            android:theme="@style/Theme.ToDo.NoActionBar"></activity>
+        <activity
+            android:name=".View_wrok_activity"
+            android:label="@string/title_activity_view_wrok_activity"
+            android:theme="@style/Theme.ToDo.NoActionBar" />
+        <activity
+            android:name=".Add_Work"
+            android:label="@string/title_activity_add__work"
+            android:theme="@style/Theme.ToDo.NoActionBar" />
+        <activity
+            android:name=".Done_activity"
+            android:label="@string/title_activity_done_activity"
+            android:theme="@style/Theme.ToDo.NoActionBar" />
+        <activity
+            android:name=".MainActivity2"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/Theme.ToDo.NoActionBar" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

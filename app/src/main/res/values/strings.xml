@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">ToDo</string>
+    <string name="title_todo">Task Not Done</string>
+    <string name="title_done">Tasks Done</string>
     <string name="scrolltext">Kotlin is a statically typed,
                  general-purpose programming language developed
                  by JetBrains, that has built world-class IDEs
@@ -72,4 +74,17 @@
                  the emp_name so initializer block uses
                  the default values and
                  print to the standard output.</string>
+    <string name="title_activity_main2">TaskArea</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_done_activity">Done_activity</string>
+    <string name="title_activity_add__work">Add_Work</string>
+    <string name="title_activity_view_wrok_activity">View_wrok_activity</string>
+    <string name="title_activity_view_done_work">View_done_work</string>
 </resources>
