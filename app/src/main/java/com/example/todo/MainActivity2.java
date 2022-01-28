@@ -56,7 +56,7 @@ public class MainActivity2 extends AppCompatActivity {
             startActivity(intent);
         });
 
-        ArrayList<ArrayList<Object>> all_tasks = db.get_all_task_details();
+        ArrayList<ArrayList<Object>> all_tasks = db.get_all_task_details("n");
 
         ll.post(() -> {
             for (int i=0; i<all_tasks.size(); i++) {
@@ -70,8 +70,19 @@ public class MainActivity2 extends AppCompatActivity {
                 child_ll.setOnClickListener(MainActivity2.this.child_select_listener);
                 TextView chile_txt_view = child_ll.findViewById(R.id.textv);
 
-                String boldText = task.get(1)+" #" + (Integer) task.get(0);
-                String normalText = "\n"+task.get(2).toString().substring(0, 20)+"...";
+                String tsk_title = (String) task.get(1);
+                if (tsk_title.length() > 20){
+                    tsk_title = tsk_title.substring(0, 20)+"...";
+                }
+
+                String boldText = tsk_title + " #" + (Integer) task.get(0);
+                String normalText;
+                if (task.get(2).toString().length() >= 20) {
+                    normalText = "\n" + task.get(2).toString().substring(0, 20) + "...";
+                }
+                else{
+                    normalText = "\n" + task.get(2).toString();
+                }
                 SpannableString str = new SpannableString(boldText + normalText);
                 str.setSpan(new StyleSpan(Typeface.BOLD), 0, boldText.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
                 str.setSpan(new RelativeSizeSpan(1.2f), 0, boldText.length(), 0);

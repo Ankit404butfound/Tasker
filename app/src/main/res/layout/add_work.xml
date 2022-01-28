@@ -28,9 +28,10 @@
                 android:background="@android:color/transparent"
                 android:textColor="#ffffff"
                 android:layout_centerVertical="true"
-                android:textSize="15dp"
+                android:textSize="20dp"
                 android:textStyle="bold"
-                android:text="←"/>
+                android:text="←"
+                android:foreground="?android:attr/selectableItemBackground"/>
             <!--                android:text="«"/>-->
 
 
@@ -47,20 +48,36 @@
                 android:textColor="#ffffff"
                 android:layout_alignParentTop="true" />
 
+            <ImageButton
+                android:id="@+id/alarm"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_toLeftOf="@+id/save"
+                app:srcCompat="@drawable/alarm"
+                android:background="@android:color/transparent"
+                android:layout_centerVertical="true"
+                android:tint="@color/white"
+                android:foreground="?android:attr/selectableItemBackground"/>
+
             <Button
                 android:id="@+id/save"
                 android:layout_width="50dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:text="✓"
+                android:textStyle="bold"
                 android:textSize="15sp"
                 android:background="@android:color/transparent"
                 android:textColor="#ffffff"
-                android:layout_centerVertical="true"/>
+                android:layout_centerVertical="true"
+                android:foreground="?android:attr/selectableItemBackground"/>
 
         </RelativeLayout>
 
         <EditText
+            android:id="@+id/task_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Title"
@@ -71,14 +88,24 @@
             android:textColorHint="#d6fff2"
             android:gravity="center_horizontal" />
         <EditText
+            android:id="@+id/task_descp"
             android:inputType="textMultiLine"
+            android:maxLines="18"
             android:gravity="top|start"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:scrollbars="vertical"
             android:hint="Description"
             android:textColorHint="#d6fff2"
             android:textSize="16sp"
             android:textColor="#d6fff2"/>
+        <TextView
+            android:id="@+id/scheduled_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Task not scheduled"
+            android:textAlignment="center"
+            android:textColor="#d6fff2"
+            android:gravity="center_horizontal" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -46,7 +46,9 @@ public class DbHandler extends SQLiteOpenHelper {
         // method to execute above sql query
         db.execSQL(query);
         Log.d("hhhhhhhhhhhhheeeeeere", "Inserted");
-        db.execSQL("INSERT INTO tasks (title, description, status, date_created, reminder_date)values('Test', 'Hello testing testing', 'n', datetime('now', 'localtime'), datetime('now', 'localtime'))");
+        Context context;
+
+        db.execSQL("INSERT INTO tasks (title, description, status, date_created, reminder_date)values('Hello','"+ MainActivity.about_text +"', 'n', datetime('now', 'localtime'), datetime('now', 'localtime'))");
 
     }
 
@@ -68,15 +70,27 @@ public class DbHandler extends SQLiteOpenHelper {
 
         SQLiteDatabase db = this.getWritableDatabase();
         Log.d("dataaaaaaaaaaaaaaa", "Inside current data");
-        String query = String.format("INSERT INTO tasks (title, description) values ('%1$s', '%2$s')", title, description);
+        String query = String.format("INSERT INTO tasks (title, description, status, date_created) values ('%1$s', '%2$s', 'n', datetime('now', 'localtime'))", title, description);
         db.execSQL(query);
+    }
+
+    public int add_scheduled_task(String title, String description, String scheduled_time) {
+
+        SQLiteDatabase db = this.getWritableDatabase();
+        Log.d("dataaaaaaaaaaaaaaa", "Inside current data");
+        String query = String.format("INSERT INTO tasks (title, description, status, date_created, reminder_date) values ('%1$s', '%2$s', 'n', datetime('now', 'localtime'), '%3$s')", title, description, scheduled_time);
+        db.execSQL(query);
+
+        Cursor cursor = db.rawQuery("SELECT max(task_id) FROM tasks", null);
+        cursor.moveToFirst();
+        return cursor.getInt(0);
     }
 
     public void update_task(int task_id, String title, String description) {
 
         SQLiteDatabase db = this.getWritableDatabase();
         Log.d("dataaaaaaaaaaaaaaa", "Inside current data");
-        String query = String.format("UPDATE tasks set title='%1$s', description='%2$s', data_created=datetime('now', 'localtime') WHERE task_id=%3$s)", title, description, task_id);
+        String query = String.format("UPDATE tasks set title='%1$s', description='%2$s', date_created=datetime('now', 'localtime') WHERE task_id=%3$s", title, description, task_id);
         db.execSQL(query);
     }
 
@@ -105,13 +119,24 @@ public class DbHandler extends SQLiteOpenHelper {
         return return_array;
     }
 
-    public ArrayList<ArrayList<Object>> get_all_task_details() {
+    public void mark_task_as_done(int task_id){
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.execSQL("UPDATE tasks set status = 'd' WHERE task_id="+task_id);
+    }
+
+    public void mark_task_as_undone(int task_id){
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.execSQL("UPDATE tasks set status = 'n' WHERE task_id="+task_id);
+    }
+
+
+    public ArrayList<ArrayList<Object>> get_all_task_details(String status_type) {
         ArrayList<ArrayList<Object>> return_array = new ArrayList<>();
         SQLiteDatabase db = this.getWritableDatabase();
 
         Log.d("dataaaaaaaaaaaaaaa", "Inside current data");
 
-        Cursor cursor = db.rawQuery("SELECT * FROM tasks", null);
+        Cursor cursor = db.rawQuery("SELECT * FROM tasks where status='"+status_type+"'", null);
 
         if (cursor.moveToFirst()) {
             int counter = 0;

@@ -28,7 +28,7 @@
                 android:background="@android:color/transparent"
                 android:textColor="#ffffff"
                 android:layout_centerVertical="true"
-                android:textSize="15dp"
+                android:textSize="20dp"
                 android:textStyle="bold"
                 android:text="←"
                 android:foreground="?android:attr/selectableItemBackground"/>
@@ -54,7 +54,7 @@
                 android:adjustViewBounds="true"
                 android:layout_width="30sp"
                 android:layout_height="30sp"
-                android:layout_toLeftOf="@+id/save"
+                android:layout_alignParentRight="true"
                 app:srcCompat="@drawable/delete"
                 android:background="@android:color/transparent"
                 android:layout_centerVertical="true"
@@ -64,9 +64,9 @@
                 android:id="@+id/save"
                 android:layout_width="50dp"
                 android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
+                android:layout_toLeftOf="@+id/delete"
                 android:text="✓"
-                android:textSize="15sp"
+                android:textSize="20sp"
                 android:background="@android:color/transparent"
                 android:textColor="#ffffff"
                 android:layout_centerVertical="true"
@@ -96,9 +96,19 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:scrollbars="vertical"
-                android:text="@string/scrolltext"
                 android:textSize="16sp"
                 android:textColor="#d6fff2"/>
+
+            <TextView
+                android:id="@+id/scheduled_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/task"
+                android:text="Task not scheduled"
+                android:textSize="15sp"
+                android:textColor="#d6fff2"
+                android:textAlignment="center"
+                android:gravity="center_horizontal" />
 
             <TextView
                 android:id="@+id/date"

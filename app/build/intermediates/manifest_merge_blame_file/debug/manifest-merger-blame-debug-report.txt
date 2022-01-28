@@ -1,0 +1,120 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.locnot"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+11-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:4:5-79
+11-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:4:22-77
+12    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+12-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:5:5-81
+12-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:5:22-78
+13    <uses-permission android:name="android.permission.WAKE_LOCK" />
+13-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:6:5-67
+13-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:6:22-65
+14    <uses-permission android:name="android.permission.VIBRATE" />
+14-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:7:5-66
+14-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:7:22-63
+15
+16    <application
+16-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:9:5-52:19
+17        android:allowBackup="true"
+17-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:10:9-35
+18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+18-->[androidx.core:core:1.3.1] C:\Users\Ankit\.gradle\caches\transforms-2\files-2.1\8dbd859d1cd89239b42e7382b4fc40d7\core-1.3.1\AndroidManifest.xml:24:18-86
+19        android:debuggable="true"
+20        android:icon="@mipmap/ic_launcher"
+20-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:11:9-43
+21        android:label="@string/app_name"
+21-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:12:9-41
+22        android:roundIcon="@mipmap/ic_launcher_round"
+22-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:13:9-54
+23        android:supportsRtl="true"
+23-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:14:9-35
+24        android:theme="@style/Theme.ToDo" >
+24-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:15:9-42
+25        <activity
+25-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:16:9-19:70
+26            android:name="com.example.todo.View_done_work"
+26-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:17:13-43
+27            android:label="@string/title_activity_view_done_work"
+27-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:18:13-66
+28            android:theme="@style/Theme.ToDo.NoActionBar" />
+28-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:19:13-58
+29        <activity
+29-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:20:9-23:61
+30            android:name="com.example.todo.View_wrok_activity"
+30-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:21:13-47
+31            android:label="@string/title_activity_view_wrok_activity"
+31-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:22:13-70
+32            android:theme="@style/Theme.ToDo.NoActionBar" />
+32-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:23:13-58
+33        <activity
+33-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:24:9-27:61
+34            android:name="com.example.todo.Add_Work"
+34-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:25:13-37
+35            android:label="@string/title_activity_add__work"
+35-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:26:13-61
+36            android:theme="@style/Theme.ToDo.NoActionBar" />
+36-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:27:13-58
+37        <activity
+37-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:28:9-31:61
+38            android:name="com.example.todo.Done_activity"
+38-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:29:13-42
+39            android:label="@string/title_activity_done_activity"
+39-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:30:13-65
+40            android:theme="@style/Theme.ToDo.NoActionBar" />
+40-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:31:13-58
+41        <activity
+41-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:32:9-35:61
+42            android:name="com.example.todo.MainActivity2"
+42-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:33:13-42
+43            android:label="@string/title_activity_main2"
+43-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:34:13-57
+44            android:theme="@style/Theme.ToDo.NoActionBar" />
+44-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:35:13-58
+45        <activity android:name="com.example.todo.MainActivity" >
+45-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:36:9-42:20
+45-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:36:19-47
+46            <intent-filter>
+46-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:37:13-41:29
+47                <action android:name="android.intent.action.MAIN" />
+47-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:38:17-69
+47-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:38:25-66
+48
+49                <category android:name="android.intent.category.LAUNCHER" />
+49-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:40:17-77
+49-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:40:27-74
+50            </intent-filter>
+51        </activity>
+52
+53        <service
+53-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:43:9-45:38
+54            android:name="com.example.todo.NotifierService"
+54-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:43:18-67
+55            android:exported="true"
+55-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:45:13-36
+56            android:permission="android.permission.BIND_JOB_SERVICE" />
+56-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:44:13-69
+57
+58        <receiver
+58-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:46:9-51:20
+59            android:name="com.example.todo.NotificationBroadcastReceiver"
+59-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:47:13-74
+60            android:enabled="true"
+60-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:48:13-35
+61            android:exported="true"
+61-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:49:13-36
+62            android:label="RestartServiceWhenStopped" >
+62-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:50:13-54
+63        </receiver>
+64    </application>
+65
+66</manifest>
