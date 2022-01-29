@@ -83,7 +83,7 @@ public class Add_Work extends AppCompatActivity implements DatePickerDialog.OnDa
                         String scheduled_date = String.format("%s-%s-%s %s:%s:00", remind_year, remind_month, remind_day, remind_hour, remind_minute);
                         int task_id = db.add_scheduled_task(task_title, task_desp, scheduled_date);
                         Toast.makeText(Add_Work.this, "Task created and scheduled", Toast.LENGTH_LONG).show();
-                        notifyJob.startJob(Add_Work.this, task_title, task_desp, 1, remind_year, remind_month, remind_day, remind_hour, remind_minute);
+                        notifyJob.startJob(Add_Work.this, task_title, task_desp, task_id, remind_year, remind_month, remind_day, remind_hour, remind_minute);
 
                         //                    notifyJob.startJob(Add_Work.this, task_id, remind_year, remind_month, remind_day, remind_hour, remind_minute);
                         Intent intent = new Intent(Add_Work.this, MainActivity.class);
@@ -125,6 +125,10 @@ public class Add_Work extends AppCompatActivity implements DatePickerDialog.OnDa
         remind_hour = hourOfDay;
         remind_minute = minute;
         TextView scheduled_time = findViewById(R.id.scheduled_time);
-        scheduled_time.setText(String.format("Schedule task for: %s-%s-%s %s:%s:00", remind_year, remind_month, remind_day, remind_hour, remind_minute));
+        String rmd_mnth = String.valueOf(remind_month+1);
+        if (remind_month < 10){
+            rmd_mnth = "0"+rmd_mnth;
+        }
+        scheduled_time.setText(String.format("Schedule task for: %s-%s-%s %s:%s:00", remind_year, rmd_mnth, remind_day, remind_hour, remind_minute));
     }
 }

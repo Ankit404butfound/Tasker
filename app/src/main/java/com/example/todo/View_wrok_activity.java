@@ -94,9 +94,21 @@ public class View_wrok_activity extends AppCompatActivity {
 
         TextView scheduled_date_view = findViewById(R.id.scheduled_date);
         String scheduled_date = (String) task_data.get(5);
+        int mnth = Integer.valueOf(scheduled_date.split(" ")[0].split("-")[1]);
+        mnth = mnth +1;
+
+        String yr = scheduled_date.split(" ")[0].split("-")[0];
+        String dy = scheduled_date.split(" ")[0].split("-")[2];
+        String hr = scheduled_date.split(" ")[0].split("-")[3];
+        String mn = scheduled_date.split(" ")[0].split("-")[4];
+
+        String sch_mnth = String.valueOf(mnth);
+        if (mnth < 10){
+            sch_mnth = "0"+sch_mnth;
+        }
 
         if (scheduled_date != null) {
-            scheduled_date_view.setText("Scheduled for: " + scheduled_date);
+            scheduled_date_view.setText(String.format("Scheduled for: %s-%s-%s %s:%s:00", yr, mnth, dy, hr, mn));
         }
 
         Button back = findViewById(R.id.back);
