@@ -1,120 +1,212 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="com.example.locnot"
+3    package="com.ankit.tasker"
 4    android:versionCode="1"
 5    android:versionName="1.0" >
 6
 7    <uses-sdk
 8        android:minSdkVersion="16"
-8-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml
+8-->C:\Users\Ankit\AndroidStudioProjects\Tasker\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="30" />
-9-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml
+9-->C:\Users\Ankit\AndroidStudioProjects\Tasker\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-11-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:4:5-79
-11-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:4:22-77
+11-->C:\Users\Ankit\AndroidStudioProjects\Tasker\app\src\main\AndroidManifest.xml:4:5-79
+11-->C:\Users\Ankit\AndroidStudioProjects\Tasker\app\src\main\AndroidManifest.xml:4:22-77
 12    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-12-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:5:5-81
-12-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:5:22-78
+12-->C:\Users\Ankit\AndroidStudioProjects\Tasker\app\src\main\AndroidManifest.xml:5:5-81
+12-->C:\Users\Ankit\AndroidStudioProjects\Tasker\app\src\main\AndroidManifest.xml:5:22-78
 13    <uses-permission android:name="android.permission.WAKE_LOCK" />
-13-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:6:5-67
-13-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:6:22-65
+13-->C:\Users\Ankit\AndroidStudioProjects\Tasker\app\src\main\AndroidManifest.xml:6:5-67
+13-->C:\Users\Ankit\AndroidStudioProjects\Tasker\app\src\main\AndroidManifest.xml:6:22-65
 14    <uses-permission android:name="android.permission.VIBRATE" />
-14-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:7:5-66
-14-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:7:22-63
-15
-16    <application
-16-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:9:5-52:19
-17        android:allowBackup="true"
-17-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:10:9-35
-18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-18-->[androidx.core:core:1.3.1] C:\Users\Ankit\.gradle\caches\transforms-2\files-2.1\8dbd859d1cd89239b42e7382b4fc40d7\core-1.3.1\AndroidManifest.xml:24:18-86
-19        android:debuggable="true"
-20        android:icon="@mipmap/ic_launcher"
-20-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:11:9-43
-21        android:label="@string/app_name"
-21-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:12:9-41
-22        android:roundIcon="@mipmap/ic_launcher_round"
-22-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:13:9-54
-23        android:supportsRtl="true"
-23-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:14:9-35
-24        android:theme="@style/Theme.ToDo" >
-24-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:15:9-42
-25        <activity
-25-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:16:9-19:70
-26            android:name="com.example.todo.View_done_work"
-26-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:17:13-43
-27            android:label="@string/title_activity_view_done_work"
-27-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:18:13-66
-28            android:theme="@style/Theme.ToDo.NoActionBar" />
-28-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:19:13-58
+14-->C:\Users\Ankit\AndroidStudioProjects\Tasker\app\src\main\AndroidManifest.xml:7:5-66
+14-->C:\Users\Ankit\AndroidStudioProjects\Tasker\app\src\main\AndroidManifest.xml:7:22-63
+15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+15-->[com.google.firebase:firebase-iid:17.0.3] C:\Users\Ankit\.gradle\caches\transforms-2\files-2.1\0426dba62f359adec1873b4af01417dd\jetified-firebase-iid-17.0.3\AndroidManifest.xml:22:5-79
+15-->[com.google.firebase:firebase-iid:17.0.3] C:\Users\Ankit\.gradle\caches\transforms-2\files-2.1\0426dba62f359adec1873b4af01417dd\jetified-firebase-iid-17.0.3\AndroidManifest.xml:22:22-76
+16    <uses-permission android:name="android.permission.INTERNET" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+16-->[com.google.firebase:firebase-iid:17.0.3] C:\Users\Ankit\.gradle\caches\transforms-2\files-2.1\0426dba62f359adec1873b4af01417dd\jetified-firebase-iid-17.0.3\AndroidManifest.xml:23:5-67
+16-->[com.google.firebase:firebase-iid:17.0.3] C:\Users\Ankit\.gradle\caches\transforms-2\files-2.1\0426dba62f359adec1873b4af01417dd\jetified-firebase-iid-17.0.3\AndroidManifest.xml:23:22-64
+17    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+17-->[com.google.firebase:firebase-iid:17.0.3] C:\Users\Ankit\.gradle\caches\transforms-2\files-2.1\0426dba62f359adec1873b4af01417dd\jetified-firebase-iid-17.0.3\AndroidManifest.xml:26:5-82
+17-->[com.google.firebase:firebase-iid:17.0.3] C:\Users\Ankit\.gradle\caches\transforms-2\files-2.1\0426dba62f359adec1873b4af01417dd\jetified-firebase-iid-17.0.3\AndroidManifest.xml:26:22-79
+18
+19    <application
+19-->C:\Users\Ankit\AndroidStudioProjects\Tasker\app\src\main\AndroidManifest.xml:9:5-49:19
+20        android:allowBackup="true"
+20-->C:\Users\Ankit\AndroidStudioProjects\Tasker\app\src\main\AndroidManifest.xml:10:9-35
+21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+21-->[androidx.core:core:1.3.1] C:\Users\Ankit\.gradle\caches\transforms-2\files-2.1\77886c7dcb2bfc54d406fd53734ded1c\core-1.3.1\AndroidManifest.xml:24:18-86
+22        android:debuggable="true"
+23        android:icon="@mipmap/ic_launcher"
+23-->C:\Users\Ankit\AndroidStudioProjects\Tasker\app\src\main\AndroidManifest.xml:11:9-43
+24        android:label="@string/app_name"
+24-->C:\Users\Ankit\AndroidStudioProjects\Tasker\app\src\main\AndroidManifest.xml:12:9-41
+25        android:networkSecurityConfig="@xml/network_security_config"
+25-->C:\Users\Ankit\AndroidStudioProjects\Tasker\app\src\main\AndroidManifest.xml:15:9-69
+26        android:roundIcon="@mipmap/ic_launcher_round"
+26-->C:\Users\Ankit\AndroidStudioProjects\Tasker\app\src\main\AndroidManifest.xml:13:9-54
+27        android:supportsRtl="true"
+27-->C:\Users\Ankit\AndroidStudioProjects\Tasker\app\src\main\AndroidManifest.xml:14:9-35
+28        android:theme="@style/Theme.Tasker" >
+28-->C:\Users\Ankit\AndroidStudioProjects\Tasker\app\src\main\AndroidManifest.xml:16:9-44
 29        <activity
-29-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:20:9-23:61
-30            android:name="com.example.todo.View_wrok_activity"
-30-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:21:13-47
-31            android:label="@string/title_activity_view_wrok_activity"
-31-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:22:13-70
-32            android:theme="@style/Theme.ToDo.NoActionBar" />
-32-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:23:13-58
+29-->C:\Users\Ankit\AndroidStudioProjects\Tasker\app\src\main\AndroidManifest.xml:17:9-20:72
+30            android:name="com.ankit.tasker.View_done_work"
+30-->C:\Users\Ankit\AndroidStudioProjects\Tasker\app\src\main\AndroidManifest.xml:18:13-43
+31            android:label="@string/title_activity_view_done_work"
+31-->C:\Users\Ankit\AndroidStudioProjects\Tasker\app\src\main\AndroidManifest.xml:19:13-66
+32            android:theme="@style/Theme.Tasker.NoActionBar" />
+32-->C:\Users\Ankit\AndroidStudioProjects\Tasker\app\src\main\AndroidManifest.xml:20:13-60
 33        <activity
-33-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:24:9-27:61
-34            android:name="com.example.todo.Add_Work"
-34-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:25:13-37
-35            android:label="@string/title_activity_add__work"
-35-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:26:13-61
-36            android:theme="@style/Theme.ToDo.NoActionBar" />
-36-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:27:13-58
+33-->C:\Users\Ankit\AndroidStudioProjects\Tasker\app\src\main\AndroidManifest.xml:21:9-24:63
+34            android:name="com.ankit.tasker.View_wrok_activity"
+34-->C:\Users\Ankit\AndroidStudioProjects\Tasker\app\src\main\AndroidManifest.xml:22:13-47
+35            android:label="@string/title_activity_view_wrok_activity"
+35-->C:\Users\Ankit\AndroidStudioProjects\Tasker\app\src\main\AndroidManifest.xml:23:13-70
+36            android:theme="@style/Theme.Tasker.NoActionBar" />
+36-->C:\Users\Ankit\AndroidStudioProjects\Tasker\app\src\main\AndroidManifest.xml:24:13-60
 37        <activity
-37-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:28:9-31:61
-38            android:name="com.example.todo.Done_activity"
-38-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:29:13-42
-39            android:label="@string/title_activity_done_activity"
-39-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:30:13-65
-40            android:theme="@style/Theme.ToDo.NoActionBar" />
-40-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:31:13-58
+37-->C:\Users\Ankit\AndroidStudioProjects\Tasker\app\src\main\AndroidManifest.xml:25:9-28:63
+38            android:name="com.ankit.tasker.Add_Work"
+38-->C:\Users\Ankit\AndroidStudioProjects\Tasker\app\src\main\AndroidManifest.xml:26:13-37
+39            android:label="@string/title_activity_add__work"
+39-->C:\Users\Ankit\AndroidStudioProjects\Tasker\app\src\main\AndroidManifest.xml:27:13-61
+40            android:theme="@style/Theme.Tasker.NoActionBar" />
+40-->C:\Users\Ankit\AndroidStudioProjects\Tasker\app\src\main\AndroidManifest.xml:28:13-60
 41        <activity
-41-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:32:9-35:61
-42            android:name="com.example.todo.MainActivity2"
-42-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:33:13-42
-43            android:label="@string/title_activity_main2"
-43-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:34:13-57
-44            android:theme="@style/Theme.ToDo.NoActionBar" />
-44-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:35:13-58
-45        <activity android:name="com.example.todo.MainActivity" >
-45-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:36:9-42:20
-45-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:36:19-47
-46            <intent-filter>
-46-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:37:13-41:29
-47                <action android:name="android.intent.action.MAIN" />
-47-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:38:17-69
-47-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:38:25-66
-48
-49                <category android:name="android.intent.category.LAUNCHER" />
-49-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:40:17-77
-49-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:40:27-74
-50            </intent-filter>
-51        </activity>
+41-->C:\Users\Ankit\AndroidStudioProjects\Tasker\app\src\main\AndroidManifest.xml:29:9-32:63
+42            android:name="com.ankit.tasker.Done_activity"
+42-->C:\Users\Ankit\AndroidStudioProjects\Tasker\app\src\main\AndroidManifest.xml:30:13-42
+43            android:label="@string/title_activity_done_activity"
+43-->C:\Users\Ankit\AndroidStudioProjects\Tasker\app\src\main\AndroidManifest.xml:31:13-65
+44            android:theme="@style/Theme.Tasker.NoActionBar" />
+44-->C:\Users\Ankit\AndroidStudioProjects\Tasker\app\src\main\AndroidManifest.xml:32:13-60
+45        <activity
+45-->C:\Users\Ankit\AndroidStudioProjects\Tasker\app\src\main\AndroidManifest.xml:33:9-36:63
+46            android:name="com.ankit.tasker.ListTask"
+46-->C:\Users\Ankit\AndroidStudioProjects\Tasker\app\src\main\AndroidManifest.xml:34:13-37
+47            android:label="@string/title_activity_main2"
+47-->C:\Users\Ankit\AndroidStudioProjects\Tasker\app\src\main\AndroidManifest.xml:35:13-57
+48            android:theme="@style/Theme.Tasker.NoActionBar" />
+48-->C:\Users\Ankit\AndroidStudioProjects\Tasker\app\src\main\AndroidManifest.xml:36:13-60
+49        <activity android:name="com.ankit.tasker.MainActivity" >
+49-->C:\Users\Ankit\AndroidStudioProjects\Tasker\app\src\main\AndroidManifest.xml:37:9-43:20
+49-->C:\Users\Ankit\AndroidStudioProjects\Tasker\app\src\main\AndroidManifest.xml:37:19-47
+50            <intent-filter>
+50-->C:\Users\Ankit\AndroidStudioProjects\Tasker\app\src\main\AndroidManifest.xml:38:13-42:29
+51                <action android:name="android.intent.action.MAIN" />
+51-->C:\Users\Ankit\AndroidStudioProjects\Tasker\app\src\main\AndroidManifest.xml:39:17-69
+51-->C:\Users\Ankit\AndroidStudioProjects\Tasker\app\src\main\AndroidManifest.xml:39:25-66
 52
-53        <service
-53-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:43:9-45:38
-54            android:name="com.example.todo.NotifierService"
-54-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:43:18-67
-55            android:exported="true"
-55-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:45:13-36
-56            android:permission="android.permission.BIND_JOB_SERVICE" />
-56-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:44:13-69
-57
-58        <receiver
-58-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:46:9-51:20
-59            android:name="com.example.todo.NotificationBroadcastReceiver"
-59-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:47:13-74
-60            android:enabled="true"
-60-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:48:13-35
-61            android:exported="true"
-61-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:49:13-36
-62            android:label="RestartServiceWhenStopped" >
-62-->C:\Users\Ankit\AndroidStudioProjects\ToDo\app\src\main\AndroidManifest.xml:50:13-54
-63        </receiver>
-64    </application>
-65
-66</manifest>
+53                <category android:name="android.intent.category.LAUNCHER" />
+53-->C:\Users\Ankit\AndroidStudioProjects\Tasker\app\src\main\AndroidManifest.xml:41:17-77
+53-->C:\Users\Ankit\AndroidStudioProjects\Tasker\app\src\main\AndroidManifest.xml:41:27-74
+54            </intent-filter>
+55        </activity>
+56
+57        <service android:name="com.ankit.tasker.FirebaseMessageReceiver" >
+57-->C:\Users\Ankit\AndroidStudioProjects\Tasker\app\src\main\AndroidManifest.xml:44:9-48:19
+57-->C:\Users\Ankit\AndroidStudioProjects\Tasker\app\src\main\AndroidManifest.xml:44:18-57
+58            <intent-filter>
+58-->C:\Users\Ankit\AndroidStudioProjects\Tasker\app\src\main\AndroidManifest.xml:45:13-47:29
+59                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+59-->C:\Users\Ankit\AndroidStudioProjects\Tasker\app\src\main\AndroidManifest.xml:46:17-78
+59-->C:\Users\Ankit\AndroidStudioProjects\Tasker\app\src\main\AndroidManifest.xml:46:25-75
+60            </intent-filter>
+61        </service>
+62        <!--
+63             FirebaseMessagingService performs security checks at runtime,
+64             no need for explicit permissions despite exported="true"
+65        -->
+66        <service
+66-->[com.google.firebase:firebase-messaging:17.3.3] C:\Users\Ankit\.gradle\caches\transforms-2\files-2.1\f3bdba5f3e998b89a0c0a274b2167b71\jetified-firebase-messaging-17.3.3\AndroidManifest.xml:28:9-34:19
+67            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+67-->[com.google.firebase:firebase-messaging:17.3.3] C:\Users\Ankit\.gradle\caches\transforms-2\files-2.1\f3bdba5f3e998b89a0c0a274b2167b71\jetified-firebase-messaging-17.3.3\AndroidManifest.xml:29:13-82
+68            android:exported="true" >
+68-->[com.google.firebase:firebase-messaging:17.3.3] C:\Users\Ankit\.gradle\caches\transforms-2\files-2.1\f3bdba5f3e998b89a0c0a274b2167b71\jetified-firebase-messaging-17.3.3\AndroidManifest.xml:30:13-36
+69            <intent-filter android:priority="-500" >
+69-->C:\Users\Ankit\AndroidStudioProjects\Tasker\app\src\main\AndroidManifest.xml:45:13-47:29
+70                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+70-->C:\Users\Ankit\AndroidStudioProjects\Tasker\app\src\main\AndroidManifest.xml:46:17-78
+70-->C:\Users\Ankit\AndroidStudioProjects\Tasker\app\src\main\AndroidManifest.xml:46:25-75
+71            </intent-filter>
+72        </service>
+73        <service
+73-->[com.google.firebase:firebase-iid:17.0.3] C:\Users\Ankit\.gradle\caches\transforms-2\files-2.1\0426dba62f359adec1873b4af01417dd\jetified-firebase-iid-17.0.3\AndroidManifest.xml:29:9-35:19
+74            android:name="com.google.firebase.components.ComponentDiscoveryService"
+74-->[com.google.firebase:firebase-iid:17.0.3] C:\Users\Ankit\.gradle\caches\transforms-2\files-2.1\0426dba62f359adec1873b4af01417dd\jetified-firebase-iid-17.0.3\AndroidManifest.xml:30:13-84
+75            android:exported="false" >
+75-->[com.google.firebase:firebase-iid:17.0.3] C:\Users\Ankit\.gradle\caches\transforms-2\files-2.1\0426dba62f359adec1873b4af01417dd\jetified-firebase-iid-17.0.3\AndroidManifest.xml:31:13-37
+76            <meta-data
+76-->[com.google.firebase:firebase-iid:17.0.3] C:\Users\Ankit\.gradle\caches\transforms-2\files-2.1\0426dba62f359adec1873b4af01417dd\jetified-firebase-iid-17.0.3\AndroidManifest.xml:32:13-34:85
+77                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+77-->[com.google.firebase:firebase-iid:17.0.3] C:\Users\Ankit\.gradle\caches\transforms-2\files-2.1\0426dba62f359adec1873b4af01417dd\jetified-firebase-iid-17.0.3\AndroidManifest.xml:33:17-96
+78                android:value="com.google.firebase.components.ComponentRegistrar" />
+78-->[com.google.firebase:firebase-iid:17.0.3] C:\Users\Ankit\.gradle\caches\transforms-2\files-2.1\0426dba62f359adec1873b4af01417dd\jetified-firebase-iid-17.0.3\AndroidManifest.xml:34:17-82
+79        </service>
+80
+81        <receiver
+81-->[com.google.firebase:firebase-iid:17.0.3] C:\Users\Ankit\.gradle\caches\transforms-2\files-2.1\0426dba62f359adec1873b4af01417dd\jetified-firebase-iid-17.0.3\AndroidManifest.xml:37:9-44:20
+82            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+82-->[com.google.firebase:firebase-iid:17.0.3] C:\Users\Ankit\.gradle\caches\transforms-2\files-2.1\0426dba62f359adec1873b4af01417dd\jetified-firebase-iid-17.0.3\AndroidManifest.xml:38:13-78
+83            android:exported="true"
+83-->[com.google.firebase:firebase-iid:17.0.3] C:\Users\Ankit\.gradle\caches\transforms-2\files-2.1\0426dba62f359adec1873b4af01417dd\jetified-firebase-iid-17.0.3\AndroidManifest.xml:39:13-36
+84            android:permission="com.google.android.c2dm.permission.SEND" >
+84-->[com.google.firebase:firebase-iid:17.0.3] C:\Users\Ankit\.gradle\caches\transforms-2\files-2.1\0426dba62f359adec1873b4af01417dd\jetified-firebase-iid-17.0.3\AndroidManifest.xml:40:13-73
+85            <intent-filter>
+85-->[com.google.firebase:firebase-iid:17.0.3] C:\Users\Ankit\.gradle\caches\transforms-2\files-2.1\0426dba62f359adec1873b4af01417dd\jetified-firebase-iid-17.0.3\AndroidManifest.xml:41:13-43:29
+86                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+86-->[com.google.firebase:firebase-iid:17.0.3] C:\Users\Ankit\.gradle\caches\transforms-2\files-2.1\0426dba62f359adec1873b4af01417dd\jetified-firebase-iid-17.0.3\AndroidManifest.xml:42:17-81
+86-->[com.google.firebase:firebase-iid:17.0.3] C:\Users\Ankit\.gradle\caches\transforms-2\files-2.1\0426dba62f359adec1873b4af01417dd\jetified-firebase-iid-17.0.3\AndroidManifest.xml:42:25-78
+87            </intent-filter>
+88        </receiver>
+89        <!--
+90             FirebaseInstanceIdService performs security checks at runtime,
+91             no need for explicit permissions despite exported="true"
+92        -->
+93        <service
+93-->[com.google.firebase:firebase-iid:17.0.3] C:\Users\Ankit\.gradle\caches\transforms-2\files-2.1\0426dba62f359adec1873b4af01417dd\jetified-firebase-iid-17.0.3\AndroidManifest.xml:50:9-56:19
+94            android:name="com.google.firebase.iid.FirebaseInstanceIdService"
+94-->[com.google.firebase:firebase-iid:17.0.3] C:\Users\Ankit\.gradle\caches\transforms-2\files-2.1\0426dba62f359adec1873b4af01417dd\jetified-firebase-iid-17.0.3\AndroidManifest.xml:51:13-77
+95            android:exported="true" >
+95-->[com.google.firebase:firebase-iid:17.0.3] C:\Users\Ankit\.gradle\caches\transforms-2\files-2.1\0426dba62f359adec1873b4af01417dd\jetified-firebase-iid-17.0.3\AndroidManifest.xml:52:13-36
+96            <intent-filter android:priority="-500" >
+96-->[com.google.firebase:firebase-iid:17.0.3] C:\Users\Ankit\.gradle\caches\transforms-2\files-2.1\0426dba62f359adec1873b4af01417dd\jetified-firebase-iid-17.0.3\AndroidManifest.xml:53:13-55:29
+96-->[com.google.firebase:firebase-iid:17.0.3] C:\Users\Ankit\.gradle\caches\transforms-2\files-2.1\0426dba62f359adec1873b4af01417dd\jetified-firebase-iid-17.0.3\AndroidManifest.xml:53:28-51
+97                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+97-->[com.google.firebase:firebase-iid:17.0.3] C:\Users\Ankit\.gradle\caches\transforms-2\files-2.1\0426dba62f359adec1873b4af01417dd\jetified-firebase-iid-17.0.3\AndroidManifest.xml:54:17-80
+97-->[com.google.firebase:firebase-iid:17.0.3] C:\Users\Ankit\.gradle\caches\transforms-2\files-2.1\0426dba62f359adec1873b4af01417dd\jetified-firebase-iid-17.0.3\AndroidManifest.xml:54:25-77
+98            </intent-filter>
+99        </service>
+100
+101        <provider
+101-->[com.google.firebase:firebase-common:16.0.3] C:\Users\Ankit\.gradle\caches\transforms-2\files-2.1\0f8848132e5d7beac210c25c98e2d504\jetified-firebase-common-16.0.3\AndroidManifest.xml:10:9-14:39
+102            android:name="com.google.firebase.provider.FirebaseInitProvider"
+102-->[com.google.firebase:firebase-common:16.0.3] C:\Users\Ankit\.gradle\caches\transforms-2\files-2.1\0f8848132e5d7beac210c25c98e2d504\jetified-firebase-common-16.0.3\AndroidManifest.xml:11:13-77
+103            android:authorities="com.ankit.tasker.firebaseinitprovider"
+103-->[com.google.firebase:firebase-common:16.0.3] C:\Users\Ankit\.gradle\caches\transforms-2\files-2.1\0f8848132e5d7beac210c25c98e2d504\jetified-firebase-common-16.0.3\AndroidManifest.xml:12:13-72
+104            android:exported="false"
+104-->[com.google.firebase:firebase-common:16.0.3] C:\Users\Ankit\.gradle\caches\transforms-2\files-2.1\0f8848132e5d7beac210c25c98e2d504\jetified-firebase-common-16.0.3\AndroidManifest.xml:13:13-37
+105            android:initOrder="100" />
+105-->[com.google.firebase:firebase-common:16.0.3] C:\Users\Ankit\.gradle\caches\transforms-2\files-2.1\0f8848132e5d7beac210c25c98e2d504\jetified-firebase-common-16.0.3\AndroidManifest.xml:14:13-36
+106
+107        <activity
+107-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\Ankit\.gradle\caches\transforms-2\files-2.1\e0af047fb9bde7b360b0e152985bd1f2\jetified-play-services-base-16.0.1\AndroidManifest.xml:23:9-26:75
+108            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+108-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\Ankit\.gradle\caches\transforms-2\files-2.1\e0af047fb9bde7b360b0e152985bd1f2\jetified-play-services-base-16.0.1\AndroidManifest.xml:24:13-79
+109            android:exported="false"
+109-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\Ankit\.gradle\caches\transforms-2\files-2.1\e0af047fb9bde7b360b0e152985bd1f2\jetified-play-services-base-16.0.1\AndroidManifest.xml:25:13-37
+110            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+110-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\Ankit\.gradle\caches\transforms-2\files-2.1\e0af047fb9bde7b360b0e152985bd1f2\jetified-play-services-base-16.0.1\AndroidManifest.xml:26:13-72
+111
+112        <meta-data
+112-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\Ankit\.gradle\caches\transforms-2\files-2.1\c26f04c6289114d419bff1c6009f270c\jetified-play-services-basement-16.0.1\AndroidManifest.xml:23:9-25:69
+113            android:name="com.google.android.gms.version"
+113-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\Ankit\.gradle\caches\transforms-2\files-2.1\c26f04c6289114d419bff1c6009f270c\jetified-play-services-basement-16.0.1\AndroidManifest.xml:24:13-58
+114            android:value="@integer/google_play_services_version" />
+114-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\Ankit\.gradle\caches\transforms-2\files-2.1\c26f04c6289114d419bff1c6009f270c\jetified-play-services-basement-16.0.1\AndroidManifest.xml:25:13-66
+115    </application>
+116
+117</manifest>

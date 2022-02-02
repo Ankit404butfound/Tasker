@@ -1,52 +1,46 @@
-com/example/todo/View_done_work.java
- com.example.todo.View_done_work
- com.example.todo.View_done_work$1
- com.example.todo.View_done_work$2
- com.example.todo.View_done_work$3
- com.example.todo.View_done_work$3$1
- com.example.todo.View_done_work$4
- com.example.todo.View_done_work$4$1
-com/example/todo/BuildConfig.java
- com.example.todo.BuildConfig
-com/example/todo/Done_activity.java
- com.example.todo.Done_activity
- com.example.todo.Done_activity$1
- com.example.todo.Done_activity$2
-com/example/todo/NotifierService.java
- com.example.todo.NotifierService
-com/example/todo/FirstFragment.java
- com.example.todo.FirstFragment
- com.example.todo.FirstFragment$1
-com/example/todo/MainActivity.java
- com.example.todo.MainActivity
- com.example.todo.MainActivity$1
- com.example.todo.MainActivity$2
-com/example/todo/First2Fragment.java
- com.example.todo.First2Fragment
- com.example.todo.First2Fragment$1
-com/example/todo/View_wrok_activity.java
- com.example.todo.View_wrok_activity
- com.example.todo.View_wrok_activity$1
- com.example.todo.View_wrok_activity$2
- com.example.todo.View_wrok_activity$3
- com.example.todo.View_wrok_activity$3$1
- com.example.todo.View_wrok_activity$4
- com.example.todo.View_wrok_activity$4$1
-com/example/todo/Second2Fragment.java
- com.example.todo.Second2Fragment
- com.example.todo.Second2Fragment$1
-com/example/todo/NotificationBroadcastReceiver.java
- com.example.todo.NotificationBroadcastReceiver
-com/example/todo/DbHandler.java
- com.example.todo.DbHandler
-com/example/todo/SecondFragment.java
- com.example.todo.SecondFragment
- com.example.todo.SecondFragment$1
-com/example/todo/NotifyJob.java
- com.example.todo.NotifyJob
-com/example/todo/Add_Work.java
- com.example.todo.Add_Work
- com.example.todo.Add_Work$1
-com/example/todo/MainActivity2.java
- com.example.todo.MainActivity2
- com.example.todo.MainActivity2$1
+com/ankit/tasker/BuildConfig.java
+ com.ankit.tasker.BuildConfig
+com/ankit/tasker/NotificationBroadcastReceiver.java
+ com.ankit.tasker.NotificationBroadcastReceiver
+com/ankit/tasker/ListTask.java
+ com.ankit.tasker.ListTask
+ com.ankit.tasker.ListTask$1
+com/ankit/tasker/Done_activity.java
+ com.ankit.tasker.Done_activity
+ com.ankit.tasker.Done_activity$1
+ com.ankit.tasker.Done_activity$2
+com/ankit/tasker/NotifyJob.java
+ com.ankit.tasker.NotifyJob
+com/ankit/tasker/NetworkManager.java
+ com.ankit.tasker.NetworkManager
+com/ankit/tasker/NotifierService.java
+ com.ankit.tasker.NotifierService
+com/ankit/tasker/FirebaseMessageReceiver.java
+ com.ankit.tasker.FirebaseMessageReceiver
+com/ankit/tasker/View_done_work.java
+ com.ankit.tasker.View_done_work
+ com.ankit.tasker.View_done_work$1
+ com.ankit.tasker.View_done_work$2
+ com.ankit.tasker.View_done_work$3
+ com.ankit.tasker.View_done_work$3$1
+ com.ankit.tasker.View_done_work$4
+ com.ankit.tasker.View_done_work$4$1
+com/ankit/tasker/Globals.java
+ com.ankit.tasker.Globals
+com/ankit/tasker/View_wrok_activity.java
+ com.ankit.tasker.View_wrok_activity
+ com.ankit.tasker.View_wrok_activity$1
+ com.ankit.tasker.View_wrok_activity$2
+ com.ankit.tasker.View_wrok_activity$3
+ com.ankit.tasker.View_wrok_activity$3$1
+ com.ankit.tasker.View_wrok_activity$4
+ com.ankit.tasker.View_wrok_activity$4$1
+com/ankit/tasker/Add_Work.java
+ com.ankit.tasker.Add_Work
+ com.ankit.tasker.Add_Work$1
+com/ankit/tasker/MainActivity.java
+ com.ankit.tasker.MainActivity
+ com.ankit.tasker.MainActivity$1
+ com.ankit.tasker.MainActivity$2
+com/ankit/tasker/DbHandler.java
+ com.ankit.tasker.DbHandler

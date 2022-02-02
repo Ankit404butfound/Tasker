@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.locnot"
+    package="com.ankit.tasker"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -12,6 +12,9 @@
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
 
     <application
         android:allowBackup="true"
@@ -19,30 +22,31 @@
         android:debuggable="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.ToDo" >
+        android:theme="@style/Theme.Tasker" >
         <activity
-            android:name="com.example.todo.View_done_work"
+            android:name="com.ankit.tasker.View_done_work"
             android:label="@string/title_activity_view_done_work"
-            android:theme="@style/Theme.ToDo.NoActionBar" />
+            android:theme="@style/Theme.Tasker.NoActionBar" />
         <activity
-            android:name="com.example.todo.View_wrok_activity"
+            android:name="com.ankit.tasker.View_wrok_activity"
             android:label="@string/title_activity_view_wrok_activity"
-            android:theme="@style/Theme.ToDo.NoActionBar" />
+            android:theme="@style/Theme.Tasker.NoActionBar" />
         <activity
-            android:name="com.example.todo.Add_Work"
+            android:name="com.ankit.tasker.Add_Work"
             android:label="@string/title_activity_add__work"
-            android:theme="@style/Theme.ToDo.NoActionBar" />
+            android:theme="@style/Theme.Tasker.NoActionBar" />
         <activity
-            android:name="com.example.todo.Done_activity"
+            android:name="com.ankit.tasker.Done_activity"
             android:label="@string/title_activity_done_activity"
-            android:theme="@style/Theme.ToDo.NoActionBar" />
+            android:theme="@style/Theme.Tasker.NoActionBar" />
         <activity
-            android:name="com.example.todo.MainActivity2"
+            android:name="com.ankit.tasker.ListTask"
             android:label="@string/title_activity_main2"
-            android:theme="@style/Theme.ToDo.NoActionBar" />
-        <activity android:name="com.example.todo.MainActivity" >
+            android:theme="@style/Theme.Tasker.NoActionBar" />
+        <activity android:name="com.ankit.tasker.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -50,17 +54,64 @@
             </intent-filter>
         </activity>
 
+        <service android:name="com.ankit.tasker.FirebaseMessageReceiver" >
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <!--
+             FirebaseMessagingService performs security checks at runtime,
+             no need for explicit permissions despite exported="true"
+        -->
         <service
-            android:name="com.example.todo.NotifierService"
-            android:exported="true"
-            android:permission="android.permission.BIND_JOB_SERVICE" />
+            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+            android:exported="true" >
+            <intent-filter android:priority="-500" >
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:exported="false" >
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
 
         <receiver
-            android:name="com.example.todo.NotificationBroadcastReceiver"
-            android:enabled="true"
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
             android:exported="true"
-            android:label="RestartServiceWhenStopped" >
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
         </receiver>
+        <!--
+             FirebaseInstanceIdService performs security checks at runtime,
+             no need for explicit permissions despite exported="true"
+        -->
+        <service
+            android:name="com.google.firebase.iid.FirebaseInstanceIdService"
+            android:exported="true" >
+            <intent-filter android:priority="-500" >
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="com.ankit.tasker.firebaseinitprovider"
+            android:exported="false"
+            android:initOrder="100" />
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
     </application>
 
 </manifest>

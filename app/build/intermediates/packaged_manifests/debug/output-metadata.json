@@ -4,7 +4,7 @@
     "type": "PACKAGED_MANIFESTS",
     "kind": "Directory"
   },
-  "applicationId": "com.example.locnot",
+  "applicationId": "com.ankit.tasker",
   "variantName": "debug",
   "elements": [
     {

@@ -11,7 +11,7 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="ToDo"
+        android:text="Tasker"
         android:gravity="center_horizontal"
         android:textAlignment="center"
         android:textSize="60sp"
